@@ -9,7 +9,7 @@ public class MeshImportTool : EditorWindow
     private float sizeMultiplier = 1.0f; // Default size multiplier
 
     // Specify the file path for the default mesh
-    private string defaultMeshPath = "Assets/Editor/Meshes/SM_Cable.obj"; // Change this path to your default mesh file
+    private string defaultMeshPath = "Assets/Editor/Meshes/SM_Cable.obj"; 
 
     [MenuItem("Window/Mesh Import Tool")]
     public static void ShowWindow()
@@ -77,6 +77,6 @@ public class MeshImportTool : EditorWindow
         // Apply the size multiplier to the transform scale
         meshObject.transform.localScale = Vector3.one * sizeMultiplier;
 
-        Debug.Log("Mesh imported successfully with HDRP material and size multiplier!");
+        Debug.Log("Mesh imported successfully");
     }
 }
